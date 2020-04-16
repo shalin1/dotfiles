@@ -13,7 +13,7 @@ export ZSH="/Users/shalin/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="rixius"
+ZSH_THEME="random"
 
 set -o vi
 bindkey -v
@@ -104,20 +104,20 @@ export EDITOR='vi'
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zz="vi ~/.zshrc"
-alias st="cd /Users/shalin/Code/stash-invest-rails"
-alias cs="cd /Users/shalin/Code/coach-service"
-alias g="git"
+alias zr="vi ~/dotfiles/zshrc"
+alias rl="source ~/dotfiles/zshrc"
+alias vr="vi ~/dotfiles/vimrc"
 alias copyLastCmd='fc -ln -1 | awk '{$1=$1}1' | pbcopy '
-alias cu='git fetch;git rebase origin/edge'
 alias tack='git commit --amend --no-edit;git push origin head --force-with-lease'
 alias la='log --all --graph --oneline --decorate'
 alias code="code-insiders"
 alias be="bundle exec"
 alias cpl='fc -ln -1 | awk '{$1=$1}1' | pbcopy '
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Initialize rbenv
 eval "$(rbenv init -)"
 
 # Skip forward/back a word with opt-arrow
@@ -142,7 +142,3 @@ eval $(thefuck --alias)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
