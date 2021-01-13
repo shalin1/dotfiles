@@ -74,6 +74,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+<<<<<<< HEAD
 alias zr="vi ~/dotfiles/zshrc"
 alias rl="source ~/dotfiles/zshrc"
 alias vr="vi ~/dotfiles/vimrc"
