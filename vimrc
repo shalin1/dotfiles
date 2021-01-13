@@ -1,1 +1,0 @@
-/Users/shalin/.vim/vimrc
